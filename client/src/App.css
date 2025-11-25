@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #f0f8ff; /* Светлый голубой фон */
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: #333; /* Темно-серый цвет текста */
+}
+
+h1 {
+  color: #5a67d8; /* Приятный сиреневый */
+  margin-bottom: 10px;
+}
+
+.mood-buttons {
+  margin: 30px 0;
+}
+
+.mood-button {
+  font-size: 2.5rem; /* Большие emoji */
+  margin: 0 10px;
+  padding: 10px 15px;
+  border: 2px solid #cbd5e0; /* Серая граница */
+  border-radius: 10px; /* Закругленные углы */
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Плавная анимация при наведении */
+}
+
+.mood-button:hover {
+  background-color: #edf2f7; /* Светло-серый фон при наведении */
+  transform: scale(1.1); /* Увеличение кнопки при наведении */
+}
+
+.mood-button.selected {
+  border-color: #5a67d8; /* Сиреневая граница для выбранной кнопки */
+  background-color: #e6fffa; /* Светлый бирюзовый фон */
+  transform: scale(1.15); /* Легкое увеличение выбранной кнопки */
+}
+
+.result {
+  margin-top: 30px;
+}
+
+.selected-mood {
+  font-size: 4rem; /* Очень большой emoji для результата */
+  margin: 20px 0;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e53e3e; /* Красный цвет */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #c53030; /* Темно-красный при наведении */
+}
